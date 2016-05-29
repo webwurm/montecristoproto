@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    <!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+    Remove this if you use the .htaccess -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+    <title>Monte-Christo - Ristorante - Pizzeria</title>
+    <meta name="description" content="Monte-Christo - Ristorante - Pizzeria">
+    <meta name="author" content="suzAnnaKompaktor">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/dist/images/favicon.ico" />
+
+    <!-- Web Fonts -->
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Italianno&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="/css/caffelatte.css" />
+    <style type="text/css">
+      #page {
+          background: #fff;
+          box-shadow: 0 0 5px rgba(0,0,0,0.12);
+          margin-top: 15px;
+          margin-bottom: 30px;
+      }
+
+      #header .contacts {
+        margin-top: 30px;
+        margin-right: 15px;
+        text-align: right;
+      }
+      #header .social-icons {
+        margin-top: 22px;
+      }
+      .brand {
+        max-height: 80px;
+      }
+      .logo {
+        height: 90px;
+      }
+      .navbar-nav {
+        float: none !important;
+      }
+      .section-highlight {
+        margin-top:-20px;
+        margin-bottom: 20px;
+        overflow: hidden;
+        position: relative;
+        border-bottom: 1px solid #fff;
+        -webkit-box-shadow: 0 5px 10px #ddd;
+          box-shadow: 0 5px 10px #ddd;
+
+      }
+
+      .footer-top {
+        overflow: hidden;
+        position: relative;
+      }
+      .section-highlight img{
+              opacity: 0.3;
+        position: absolute;
+      }
+      .footer-top > img {
+         opacity: 0.1;
+        position: absolute;
+      }
+      #welcome,
+      #opening {
+        margin: 15px;
+      }
+
+      @media (min-width: 768px) {
+         #welcome, #opening { margin: 45px; }
+      }
+
+      #opening {
+        background-color: rgba(0,0,0,0.3);
+        border: 1px solid rgba(255,255,255,0.5);
+        box-shadow: 0 0 2px #000;
+        padding: 15px;
+      }
+.time-table {
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+      .week-day dd {
+          text-align: right;
+      }
+      .week-day dt {
+    float: left;
+    width: 50%;
+    font-weight: normal;
+}
+.week-day.today dt, .week-day.today dd {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+}
+.navbar-fixed {
+  position: fixed;
+  top: 0;
+  left:15px;
+  right: 15px;
+      z-index: 1010;
+      background-color: rgba(255, 255, 255, 0.9);
+}
+
+@media (min-width: 768px) {
+  .navbar-fixed {
+    left:auto;
+    right: auto;
+    background-color: #fff;
+  }
+}
+
+.navbar-toggle {
+  background-color: #fff;
+}
+
+hr {
+  border-top-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer hr {border-top-color: rgba(255, 255, 255, 0.5);}
+    </style>
+  </head>
+
+  <body class="" >
+    <div id="page" class="container">
+    <header id="header" class="">
+        <div class="row pt-md pb-md">
+          <div class="col-sm-6">
+            <div class="brand text-center">
+              <a href="/" title="" rel="home" class="">
+                <img src="/images/logo.png" alt="" class="logo" />
+              </a>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="social-icons pull-right hidden-xs">
+              <ul class="list-inline">
+                <li class="text-muted facebook"><a href="" class="text-muted"><i class="fa fa-fw fa-facebook"></i> </a></li>
+              </ul>
+            </div>
+            <div class="contacts pull-right">
+              <ul class="list-separeted">
+                <li class="text-muted text-sm"><i class="fa fa-fw fa-phone"></i> (01) 368 44 68</li>
+                <li class="text-muted text-sm"><i class="fa fa-fw fa-envelope"></i> <a href="" class="text-muted">office@montechristo.co.at</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class="navbar navbar-default row">
+        <div class="container">
+          <div class="navbar-header">
+            <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+            <button class="btn navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <i class="fa fa-fw fa-bars"></i>
+            </button>
+          </div>
+          <div class="navbar-collapse collapse">
+            <nav role="navigation">
+              <a href="#" class="btn btn-primary pull-right" style="margin-top:10px;">Book online</a>
+              <ul class="menu nav navbar-nav">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/">Our restaurant</a></li>
+                <li class="dropdown">
+                  <a href="javascript:;" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Speisen<i class="custom-caret text-muted"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/" title="">Spezialitätenkarte</a></li>
+                    <li><a href="/" title="">Antipasti</a></li>
+                    <li><a href="/" title="">Zuppe</a></li>
+                    <li><a href="/" title="">Insalate</a></li>
+                    <li><a href="/" title="">Pizze</a></li>
+                    <li><a href="/" title="">Paste</a></li>
+                    <li><a href="/" title="">Gratinate</a></li>
+                    <li><a href="/" title="">Risotti</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                  <a href="javascript:;" title="" data-target="#" class="dropdown-toggle" data-toggle="dropdown">Getränke<i class="custom-caret text-muted"></i></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="/" title="">Café Tee</a></li>
+                    <li><a href="/" title="">Analcolici</a></li>
+                    <li><a href="/" title="">Birre</a></li>
+                    <li><a href="/" title="">Aperitivi</a></li>
+                    <li><a href="/" title="">Grappa e degistivi</a></li>
+                    <li><a href="/" title="">Offene Weine</a></li>
+                    <li><a href="/" title="">Flaschenweine</a></li>
+                  </ul>
+                </li>
+                <li><a href="/">Food-quality</a></li>
+                <li><a href="/">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
+
+    <section role="main" class="main">
+
+      <div class="section-highlight bg-inverse bg-styled-alt bordered row">
+        <img src="/images/DSC00503.JPG" class="img-responsive hidden-xs" />
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+              <div id="welcome">
+                <h1>Willkommen im Monte Christo</h1>
+                <p class="lead">Willkommen im Monte Christo - unserem Ristorante mit italienischem Charme und Flair!</p>
+                <p class="bodytext">Unsere umfangreiche Speisekarte bietet Ihnen neben <b>hausgemachter Pizza</b> und <b>Pasta</b> köstliche <b>Fischgerichte</b> sowie Gaumenfreuden vom <b>Grill</b>. Neben besonderen <b>saisonalen Spezialitäten</b> bieten wir Ihnen von Mo - Fr in der Zeit von 11:00 bis 14:30 Uhr einen wechselnden und immer frisch zubereiteten <b>Tagesteller</b>.</p>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <div id="opening">
+                <h3 class="text-center h4"><span class="light">Opening</span> Time</h3>
+                <hr />
+                <div class="time-table"><div class="inner-bg text-muted"><dl class="week-day closed"><dt>Monday</dt><dd>CLOSED</dd></dl><dl class="week-day light-bg"><dt>Tuesday</dt><dd>11:00-22:00</dd></dl><dl class="week-day"><dt>Wednesday</dt><dd>11:00-22:00</dd></dl><dl class="week-day light-bg"><dt>Thursday</dt><dd>11:00-22:00</dd></dl><dl class="week-day"><dt>Friday</dt><dd>11:00-24:00</dd></dl><dl class="week-day light-bg today"><dt>Saturday</dt><dd>9:00-24:00</dd></dl><dl class="week-day"><dt>Sunday</dt><dd>9:00-24:00</dd></dl></div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <header role="banner" id="page-header">
+        <div class="container"></div>
+      </header> <!-- /#page-header -->
+
+      <div class="container-main">
+        <div class="">
+          <div class="row mt-md">
+            <div class="col-md-4">
+              <p><span class="img-thumbnail"><img src="/images/DSC00493.JPG" class="img-responsive" /><span></p>
+              <p class="bodytext">Auch Liebhaber <b>vegetarischer Gerichte</b> kommen bei uns nicht zu kurz!</p>
+              <p class="bodytext">Egal ob Sie unser immer frisch zubereitetes&nbsp;<b>Mittagsmenü</b>&nbsp;nutzen, unsere Speisen&nbsp;<b>mit nach Hause</b>&nbsp;nehmen, Gebrauch von unserem&nbsp;<b>Zustelldienst</b>&nbsp;machen oder sich abends in aller Ruhe ein&nbsp;<b>Abendessen bei Kerzenschein</b>&nbsp;gönnen:</p>
+            </div>
+            <div class="col-md-4">
+              <p><img src="/images/DSC00510.JPG" class="img-responsive img-thumbnail" /></p>
+              <p class="bodytext">Wir haben&nbsp;<b>täglich&nbsp;</b>von&nbsp;<b>11.00 bis 23.00 Uhr</b>&nbsp;für Sie&nbsp;geöffnet,&nbsp;<b>kein Ruhetag</b>.&nbsp;Sie sind uns immer willkommen!</p>
+              <p class="text-right"><a href="#" class="btn btn-default">Tischreservierung</a></p>
+            </div>
+            <div class="col-md-4">
+              <p><img src="/images/DSC00508.JPG" class="img-responsive img-thumbnail" /></p>
+              <p class="bodytext">In den Sommermonaten dürfen wir Sie außerdem in unseren gemütlichen, schattigen <b>Schanigarten</b> einladen.</p>
+              <p class="bodytext">Für geschlossene Gesellschaften, wie z. B. Geburtstags- oder Firmenfeiern, bieten wir nun auch einen <b>Gesellschaftsraum</b> für bis zu 15 Personen!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+<footer class="footer footer-inverse row">
+
+      <div class="footer-top">
+        <img src="/images/DSC00512.JPG" class="img-responsive hidden-xs" />
+        <div class="container pt-lg pb-lg">
+          <div class="row">
+            <div class="col-sm-4">
+              <h2 class="h4 text-center">Kontakt</h2>
+              <hr />
+              <p class="text-muted">Döblinger Hauptstr. 34<br>1190 Wien<br>Tel. u. Fax: <strong>01/368 44 68</strong><br>E-Mail: <a href="javascript:linkTo_UnCryptMailto('nbjmup+pggjdfAnpoufdisjtup/dp/bu');"><strong>office(at)montechristo.co.at</strong></a>
+</p>
+<p class="text-right">
+<a href="#" class="text-uppercase text-semi-bold">See map <i class="fa fa-angle-double-right"></i></a>
+<br />
+<a href="#" class="text-uppercase text-semi-bold">Kontaktformular <i class="fa fa-angle-double-right"></i></a>
+</p>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="h4 text-center">Opening Time</h2>
+              <hr />
+              <div class="opening">
+                <div class="time-table"><div class="inner-bg text-muted"><dl class="week-day closed"><dt>Monday</dt><dd>CLOSED</dd></dl><dl class="week-day light-bg"><dt>Tuesday</dt><dd>11:00-22:00</dd></dl><dl class="week-day"><dt>Wednesday</dt><dd>11:00-22:00</dd></dl><dl class="week-day light-bg"><dt>Thursday</dt><dd>11:00-22:00</dd></dl><dl class="week-day"><dt>Friday</dt><dd>11:00-24:00</dd></dl><dl class="week-day light-bg today"><dt>Saturday</dt><dd>9:00-24:00</dd></dl><dl class="week-day"><dt>Sunday</dt><dd>9:00-24:00</dd></dl></div></div>
+              </div>
+            </div>
+            <div class="col-sm-4">
+              <h2 class="h4 text-center">Get in touch</h2>
+              <hr />
+              <div class="fb-page" data-href="https://www.facebook.com/132554216826892" data-tabs="timeline" data-height="350" data-small-header="true" data-adapt-container-width="false" data-hide-cover="false" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/132554216826892"><a href="https://www.facebook.com/132554216826892">Ristorante Pizzeria Monte Christo</a></blockquote></div></div>
+            </div>
+          </div>
+        </div>
+      </div><!-- eof .footer-top -->
+      <div class="footer-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+              <span class="text-sm">Copyright information</span>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-separeted text-sm pull-right">
+                <li><a href="#"><strong class="text-bold">Impressum</strong></a></li>
+                <li>Created by <a href="#"><strong class="text-bold">seitenkreativ.com</strong></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div><!-- eof #page -->
+
+  <a href="#" rel="scroll-to-top" class="scroll-to-top"></a>
+
+  <!-- Vendor -->
+  <script src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+(function ($) {
+  $(window).on('scroll', function() {
+      // Add sticky top.
+      if ($(window).scrollTop() >= ($('#header').height() + 15)) {
+        $('.navbar').addClass('navbar-fixed');
+      }
+      else {
+        $('.navbar').removeClass('navbar-fixed');
+      }
+  });
+})(jQuery);
+</script>
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v2.6&appId=214948728600664";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  </body>
+</html>

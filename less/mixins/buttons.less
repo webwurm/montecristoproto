@@ -1,0 +1,53 @@
+/**
+ * @file
+ * mixins/buttons.less.
+ *
+ * Add Bootstrap button component mixins.
+ */
+
+/**
+ * Button gradient mixin.
+ */
+.button-gradient(@light, @dark) {
+  text-shadow: none;
+  border-color: desaturate(lighten(@light,35%), 40%);
+  box-shadow: 0 0 0 2px darken(@light, 2%);
+  #gradient > .vertical(@light, @dark);
+
+  &:hover,
+  &:focus,
+  &:active,
+  &.active,
+  .open > .dropdown-toggle&{
+    //border-color: desaturate(lighten(@light,35%), 40%);
+  }
+
+  &:hover,
+  &:focus,
+  .open > .dropdown-toggle& {
+    #gradient > .vertical(lighten(@light, 3%), lighten(@dark, 3%));
+    border-color: desaturate(lighten(lighten(@light, 3%),35%), 40%);
+  }
+
+  &:active,
+  &.active {
+    #gradient > .vertical(lighten(@dark, 5%), lighten(@light, 5%));
+  }
+
+  &.disabled,
+  &[disabled]{
+    #gradient > .vertical(darken(@light, 10%), darken(@dark, 10%));
+  }
+}
+
+/**
+ * Rounded button.
+ */
+.round-button(@size) {
+  width:@size;
+  height:@size;
+  line-height:@size;
+  text-align:center;
+  padding:0;
+  .round-border(100%);
+}
